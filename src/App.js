@@ -22,7 +22,18 @@ function App() {
 				Launch
 			</button>
 
-			<BsGithub className="githubIcon" size={32} color={"#fff"} />
+			<BsGithub
+				className="githubIcon"
+				size={32}
+				color={"#fff"}
+				onClick={(e) => {
+					e.preventDefault();
+					window.open(
+						"https://github.com/NickMezacapa/macOS-calculator--react-mini-project",
+						"_blank",
+					);
+				}}
+			/>
 		</div>
 	);
 }
