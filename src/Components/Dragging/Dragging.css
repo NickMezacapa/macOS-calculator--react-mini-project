@@ -1,0 +1,63 @@
+.Dragging {
+    width: 240px;
+    height: 330px;
+    position: absolute;
+    top: 29%;
+    right: 20%;
+    z-index: 999000000;
+    display: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px hsla(0,0%,59.2%,.1);
+    transform-style: preserve-3d;
+    transform: skew(0) translateX(0) translateY(0);
+}
+.Dragging_active {
+    display: block;
+    position: fixed;
+}
+.Dragging-min-anim {
+    animation: min-anim 1s ease-in-out forwards;
+    animation-delay: 0s;
+}
+.shortPcalc {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: shortPcalc 2.5s ease-in-out forwards;
+}
+
+@keyframes shortPcalc {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    30% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+}
+@keyframes min-anim {
+    0% {
+        transform: skew(0) translateX(0) translateY(0);
+    }
+    10% {
+        transform: skew(10deg) translateX(10px) translateY(30px);
+    }
+    20% {
+        transform: skew(25deg) translateX(25px) translateY(75px);
+    }
+    100% {
+        transform: skew(0) translateX(800px) translateY(2400px);
+    }
+}

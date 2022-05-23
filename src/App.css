@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bodyContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1d1d1f;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  display: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-weight: 500;
+  width: 60%;
+}
+#click {
+  font-size: 20px;
+  font-weight: 300;
+  width: 60%;
+  margin-top: 3rem;
+}
+#button {
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+  background-color: #4e4e4f;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 2rem;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  width: 10%;
+  transition: 0.4s ease;
+}
+button:hover {
+  background-color: #babac1;
+  color: #1d1d1f;
+}
+.githubIcon {
+  position: absolute;
+  bottom: 20%;
+  transition: 0.4s ease;
+  border-radius: 32px;
+}
+.githubIcon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 30px hsla(0,0%,59.2%,.4);
 }
